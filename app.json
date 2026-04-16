@@ -19,8 +19,10 @@
         "monochromeImage": "./assets/images/android-icon-monochrome.png"
       },
       "edgeToEdgeEnabled": true,
-      "predictiveBackGestureEnabled": false
+      "predictiveBackGestureEnabled": false,
+      "package": "com.katherine_sailema.calculadoraapp"
     },
+    
     "web": {
       "output": "static",
       "favicon": "./assets/images/favicon.png"
@@ -43,6 +45,12 @@
     "experiments": {
       "typedRoutes": true,
       "reactCompiler": true
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "940220b9-ea78-4bea-9205-f0e6d4842f27"
+      }
     }
   }
 }
