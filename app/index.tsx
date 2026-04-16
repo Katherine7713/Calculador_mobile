@@ -31,7 +31,7 @@ const CalculatorApp = () => {
 
   const del = async() => {
     setDisplay(display.slice(0, -1));
-    await Haptics.notificationAsync(Haptics.NotificationFeedbackType.Warning);
+    await Haptics.notificationAsync(Haptics.NotificationFeedbackType.Success);
   }
 
   const changeSign = () => {
@@ -61,7 +61,7 @@ const CalculatorApp = () => {
 
   const calculate = async() => {
     try {
-      const result = eval(display. replace("x", "*"). replace("÷", "/"));
+      const result = eval(display. replace("x", "*"). replace("÷", "/"). replace("−", "-"). replace("+", "+"));
       setResultado(result.toString());
       await Haptics.notificationAsync(Haptics.NotificationFeedbackType.Success);
     } catch {
